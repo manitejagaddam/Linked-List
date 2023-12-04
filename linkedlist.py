@@ -49,7 +49,7 @@ def Insertion(start):
 
 
 
-def Insertion_Start(start):
+def Insert_at_Start(start):
     n = int(input("Enter the element to be Inserted at First : "))
     temp = Node(n)
     temp.link = start.head
@@ -58,7 +58,7 @@ def Insertion_Start(start):
     # return start
 
 
-def Deletion_Begging(start):
+def Delete_at_Begging(start):
 
     if start.head is None:
         print("No Elements To be Deleted")
@@ -68,7 +68,7 @@ def Deletion_Begging(start):
         start.head = p
 
 
-def Insertion_End(start):
+def Insert_at_End(start):
     n = int(input("ENter the element to be inserted at Last : "))
     temp = Node(n)
     p = start.head
@@ -77,7 +77,7 @@ def Insertion_End(start):
     p.link = temp
 
 
-def Deletion_End(start):
+def Delete_at_End(start):
 
     if start.head:
         p = start.head
@@ -93,7 +93,7 @@ def Deletion_End(start):
         print("No Elements To be Deleted")
 
 
-def Insertion_Position(start):
+def Insert_at_Position(start):
     pos = int(input("Enter the position to be Inserted : "))
     n = int(input(f"Enter the value to be inserted at {pos} position : "))
     temp = Node(n)
@@ -113,7 +113,7 @@ def Insertion_Position(start):
         print("Invalid Position")
 
 
-def Deletion_Position(start):
+def Delete_at_Position(start):
     pos = int(input("Enter a position to delete an element : "))
     p = start.head
     q = None
@@ -175,22 +175,22 @@ if __name__ == '__main__':
             Insertion(Linked_List)
         
         elif(n == 2):
-            Insertion_Start(Linked_List)
+            Insert_at_Start(Linked_List)
 
         elif(n == 3):
-            Insertion_End(Linked_List)
+            Insert_at_End(Linked_List)
 
         elif(n == 4):
-            Insertion_Position(Linked_List)
+            Insert_at_Position(Linked_List)
 
         elif(n == 5):
-            Deletion_Begging(Linked_List)
+            Delete_at_Begging(Linked_List)
 
         elif(n == 6):
-            Deletion_End(Linked_List)
+            Delete_at_End(Linked_List)
 
         elif(n == 7):
-            Deletion_Position(Linked_List)
+            Delete_at_Position(Linked_List)
 
         elif(n == 8):
             Length(Linked_List)
